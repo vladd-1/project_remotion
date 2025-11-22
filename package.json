@@ -1,0 +1,45 @@
+{
+  "name": "remotion-captioning-app",
+  "version": "1.0.0",
+  "description": "Full-stack video captioning application with Remotion and Hinglish support",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "render": "node scripts/render-video.js",
+    "remotion:preview": "remotion preview src/remotion/index.ts",
+    "remotion:render": "remotion render src/remotion/index.ts CaptionedVideo output.mp4"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.136",
+    "@remotion/cli": "^4.0.136",
+    "@remotion/lambda": "^4.0.136",
+    "@remotion/player": "^4.0.136",
+    "@remotion/renderer": "^4.0.136",
+    "assemblyai": "^4.19.0",
+    "dotenv": "^17.2.3",
+    "formidable": "^3.5.1",
+    "next": "^14.1.0",
+    "openai": "^4.28.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.136",
+    "swr": "^2.2.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.52",
+    "@types/react-dom": "^18.2.18",
+    "@types/uuid": "^9.0.8",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
